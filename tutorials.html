@@ -5,42 +5,49 @@ layout: default
   <header class="bg-light">
     <div class="container">
       <div class="row">
-          <h1 class="mb-3">Information Hub</h1>
+          <h1 class="mb-3">Tutorials</h1>
       </div>
       <div class="row align-items-center">
         <div class="col-6 mx-auto col-md-6 order-md-2">
           <img src="{{ '/assets/img/tutorial.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-          <p class="lead">
-            Tutorials
-          </p>
           <p class="lead mb-4">
             Before starting the tutorials, ensure that you are ready to go with the getting started guide.
           </p>
           <div class="row mx-n2 text-center">
-            <a class="btn btn-lg btn-outline-success" href="" role="button">Getting started &raquo;</a>
+            <a class="btn btn-lg btn-outline-success" href="getting_started" role="button">Getting started &raquo;</a>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="mb-3">Tutorials</h1>
-      </div>
-      <div class="card-columns">
-          <div class="card">
-              <div class="card-header">to be completed</div>
-              <ul class="list-group list-group-flush">
-                  <li class="list-group-item">to be completed</li>
-              </ul>
-            </div>
+  <div class="container">
+  
+  {% assign videos = site.videos | | where:"categories","tutorial"  %}
 
-      </div>
-    </div>
-  </section>
+  {% for post in videos %}
 
+      <div class="row align-items-center m-2">
+        <div class="col-6 mx-auto col-md-6 order-md-2">
+            <div class="video-container">
+                <iframe width="853" height="480" src="{{ post.video_url }}" frameborder="0" allowfullscreen></iframe>
+              </div>
+        </div>
+        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+            <p class="lead">
+                {{ post.title }}
+            </p>
+          <p class="lead mb-4">
+            {{ post.excerpt }}
+          </p>
+          <div class="row mx-n2 text-center">
+            <a class="btn btn-lg btn-outline-success" href="{{ post.video_url }} " target="_blank" role="button">Show Video &raquo;</a>
+          </div>
+        </div>
+      </div>
+  {% endfor %}
+</div>
+  
 

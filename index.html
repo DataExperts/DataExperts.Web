@@ -2,187 +2,180 @@
 layout: default
 ---
 
-  <header class="bg-light">
-    <div class="container">
-      <div class="row">
-          <h1 class="mb-3">Integration Hub</h1>
+<header class="bg-light">
+  <div class="container">
+    <div class="row ">
+      <h1 class="mb-3">Integration Hub</h1>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+        <img src="{{ '/assets/img//dexih-view-1.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
       </div>
-      <div class="row align-items-center">
-        <div class="col-6 mx-auto col-md-6 order-md-2">
-          <img src="{{ '/assets/img//dexih-view-1.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
-        </div>
-        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-          <p class="lead">
-            A simple and powerful way to manage your data.
-          </p>
-          <p class="lead mb-4">
-            The Integration Hub is an online platform for extracting, processing and delivering data. Quickly connect to
-            data stored in databases, text files, API's, run analytics and other transformations on the data, then deliver
-            or visualize the results.
-          </p>
-          <div class="row mx-n2 text-center">
-            <a class="btn btn-lg btn-outline-success"  role="button" href="{{ '/getting_started' | relative_url }}">Getting started &raquo;</a>
-            <a class="btn btn-lg btn-outline-primary ml-2"  role="button" href="{{ '/videos' | relative_url }}" >See it in action &raquo;</a>
-          </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <p class="lead">
+          A simple and powerful way to manage your data.
+        </p>
+        <p class="lead mb-4">
+          The Integration Hub is an online platform for extracting, processing and delivering data. Quickly connect to
+          data stored in databases, text files, API's, run analytics and other transformations on the data, then deliver
+          or visualize the results.
+        </p>
+        <div class="row mx-n2 text-center">
+          <a class="btn btn-lg btn-outline-success m-2" role="button" href="{{ '/getting_started' | relative_url }}">Getting
+            started &raquo;</a>
+          <a class="btn btn-lg btn-outline-primary m-2" role="button" href="{{ '/videos' | relative_url }}">See it in
+            action &raquo;</a>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="mb-3">Features at a glance</h1>
-      </div>
-      <div class="card-columns">
-          <div class="card">
-              <div class="card-header">Built for the cloud</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Metadata stored centrally</li>
-                <li class="list-group-item">Physical data stored and accessed anywhere</li>
-                <li class="list-group-item">Easy to scale</li>
-              </ul>
-            </div>
-        <div class="card">
-          <div class="card-header">Sql Databases</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Postgres (including Amazon Aurora)</li>
-            <li class="list-group-item">Microsoft Sql Server</li>
-            <li class="list-group-item">MySql</li>
-            <li class="list-group-item">Oracle </li>
-            <li class="list-group-item">DB2</li>
-            <li class="list-group-item">IBM DB2</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">(NoSql) Databases</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">MongoDB</li>
-            <li class="list-group-item">Azure Storage Tables</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">File data</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Sqlite</li>
-            <li class="list-group-item">Microsoft Excel</li>
-            <li class="list-group-item">Delimited Files (such as CSV)</li>
-            <li class="list-group-item">Json Files</li>
-            <li class="list-group-item">Xml Files</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">File connectivity</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">REST based API's</li>
-            <li class="list-group-item">Local File Systems</li>
-            <li class="list-group-item">FTP</li>
-            <li class="list-group-item">SFTP</li>
-            <li class="list-group-item">Azure Storage</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Data Loading</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Bulk Load (for speed)</li>
-            <li class="list-group-item">Transactional Load (for data integrity) </li>
-            <li class="list-group-item">Target based change detection</li>
-            <li class="list-group-item">Source based change detection</li>
-            <li class="list-group-item">Update target tables or preserve change history (Type 2 Slowly changing)</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Transforms</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Sql like transforms (map, filter, group, join, union)</li>
-            <li class="list-group-item">Analytical aggregations (such as moving average)</li>
-            <li class="list-group-item">Join flat tables to structured datasets (such as JSON)</li>
-            <li class="list-group-item">Series transform to aggregate and even out time series.</li>
-            <li class="list-group-item">Row generation transform to pivot data.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Functions</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Hundreds of built in functions</li>
-            <li class="list-group-item">Machine Learning - regression, sentiment, recommendation, clustering, anomaly
-              detection</li>
-            <li class="list-group-item">Statistical - curve fitting, matrix, distribution</li>
-            <li class="list-group-item">Financial - Interest rate, yield, discount etc.</li>
-            <li class="list-group-item">Live data - weather, stocks, currency</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Data Validation</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Leverage any built in function</li>
-            <li class="list-group-item">Build reusable data validations</li>
-            <li class="list-group-item">Validate via white lists or black lists</li>
-            <li class="list-group-item">Validate against lookups (e.g. value exists in other table)</li>
-            <li class="list-group-item">Invalid data can be rejected or stop processing</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Data Profiling</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Built in profiling functions</li>
-            <li class="list-group-item">Data type profiling</li>
-            <li class="list-group-item">Pattern profiling</li>
-            <li class="list-group-item">Capture profile data with any data processing</li>
-          </ul>
-  
-        </div>
-        <div class="card">
-          <div class="card-header">Scheduling</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Order data processing into dependency chains</li>
-            <li class="list-group-item">Trigger based on schedule (once off or recurring)</li>
-            <li class="list-group-item">Trigger based on file event</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-header">Views and Dashboards</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Custom data views</li>
-            <li class="list-group-item">Chart data (bar, pie, line, scatter etc.)</li>
-            <li class="list-group-item">Trigger based on file event</li>
-            <li class="list-group-item">User configurable dashboards which group views and charts into layout</li>
-          </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">Publishing & Sharing</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Publish tables/views/dashboard for private/public groups</li>
-              <li class="list-group-item">Create REST/JSON Api for external processes</li>
-            </ul>
-          </div>
-          <div class="card">
-              <div class="card-header">Security Features</div>
-              <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Strong encryption on passwords and marked sensitive fields.</li>
-                  <li class="list-group-item">Encryption keys decentralized (i.e. cannot be access by Data Experts staff)</li>
-                  <li class="list-group-item">Automatic SSL key generation to encrypt all data in transit</li>
-                  <li class="list-group-item">Local network containment option which ensures data never leaves local network.</li>
-                  <li class="list-group-item">IP address whitelisting for remote processing agents.</li>
-              </ul>
-            </div>
-            <div class="card">
-                <div class="card-header">Developers</div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Completely open source</li>
-                    <li class="list-group-item">Data connectivity plugin (through Microsoft .Net Core)</li>
-                    <li class="list-group-item">Function plugins (through Microsoft .Net Core)</li>
-                </ul>
-              </div>
-      </div>
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Features at a glance</h1>
     </div>
-  </section>
+    <div class="card-columns">
+      <div class="card">
+        <div class="card-header">Cloud</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Single central metadata store</li>
+          <li class="list-group-item">Physical data stored and accessed anywhere</li>
+          <li class="list-group-item">Easy to scale</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Sql Database Connectivity</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Postgres (including Amazon Aurora)</li>
+          <li class="list-group-item">Microsoft Sql Server</li>
+          <li class="list-group-item">MySql</li>
+          <li class="list-group-item">Oracle </li>
+          <li class="list-group-item">DB2</li>
+          <li class="list-group-item">IBM DB2</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">(NoSql) Databases Connectivity</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">MongoDB</li>
+          <li class="list-group-item">Azure Storage Tables</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">File Types</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Sqlite</li>
+          <li class="list-group-item">Microsoft Excel</li>
+          <li class="list-group-item">Delimited Files (such as CSV)</li>
+          <li class="list-group-item">Json Files</li>
+          <li class="list-group-item">Xml Files</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">File Connectivity</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">REST based API's</li>
+          <li class="list-group-item">Local File Systems</li>
+          <li class="list-group-item">FTP</li>
+          <li class="list-group-item">SFTP</li>
+          <li class="list-group-item">Azure Storage</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Data Loading</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Bulk Load (for speed)</li>
+          <li class="list-group-item">Transactional Load (for data integrity) </li>
+          <li class="list-group-item">Target based change detection</li>
+          <li class="list-group-item">Source based change detection</li>
+          <li class="list-group-item">Update target tables or preserve change history (Type 2 Slowly changing)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Transforms</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Sql like transforms (map, filter, group, join, union)</li>
+          <li class="list-group-item">Analytical aggregations (such as moving average)</li>
+          <li class="list-group-item">Join flat tables to structured datasets (such as JSON)</li>
+          <li class="list-group-item">Series transform to aggregate and even out time series.</li>
+          <li class="list-group-item">Row generation transform to pivot data.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Functions</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Hundreds of built in functions</li>
+          <li class="list-group-item">Machine Learning - Regression, Sentiment, Recommendation, Clustering, Anomaly
+            detection</li>
+          <li class="list-group-item">Statistical - Curve fitting, Matrix, Distribution</li>
+          <li class="list-group-item">Financial - Interest rate, Yield, Discount etc.</li>
+          <li class="list-group-item">Live data - Weather, Stocks, Currency</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Data Validation</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Leverage any built in function</li>
+          <li class="list-group-item">Custom reusable data validations</li>
+          <li class="list-group-item">Validate via white lists or black lists</li>
+          <li class="list-group-item">Validate against lookups (e.g. value exists in other table)</li>
+          <li class="list-group-item">Invalid data can be rejected or stop processing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Data Profiling</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Built in profiling functions</li>
+          <li class="list-group-item">Data type profiling</li>
+          <li class="list-group-item">Pattern profiling</li>
+          <li class="list-group-item">Capture profile data with any data processing</li>
+        </ul>
 
-<section class="bg-light">
-    <div class="container">
-        <div class="row">
-          <h1 class="mb-3">How it works</h1>
-        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Scheduling</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Order data processing into dependency chains</li>
+          <li class="list-group-item">Trigger based on schedule (once off or recurring)</li>
+          <li class="list-group-item">Trigger based on file event</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Views and Dashboards</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Custom data views</li>
+          <li class="list-group-item">Chart data (bar, pie, line, scatter etc.)</li>
+          <li class="list-group-item">Trigger based on file event</li>
+          <li class="list-group-item">User configurable dashboards which group views and charts into layout</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Publishing & Sharing</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Publish tables/views/dashboard for private/public groups</li>
+          <li class="list-group-item">Create REST/JSON Api for external processes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Security Features</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Strong encryption on passwords and marked sensitive fields.</li>
+          <li class="list-group-item">Encryption keys decentralized (i.e. cannot be access by Data Experts staff)</li>
+          <li class="list-group-item">Automatic SSL key generation to encrypt all data in transit</li>
+          <li class="list-group-item">Local network isolation option which ensures data never leaves local network.</li>
+          <li class="list-group-item">IP address whitelisting for remote processing agents.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">Developers</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Completely open source</li>
+          <li class="list-group-item">Data connectivity plugin (through Microsoft .Net Core)</li>
+          <li class="list-group-item">Function plugins (through Microsoft .Net Core)</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
-

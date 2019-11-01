@@ -2,78 +2,113 @@
 layout: default
 ---
 
-  <header class="bg-light">
-    <div class="container">
-      <div class="row">
-          <h1 class="mb-3">Information Hub</h1>
-      </div>
-      <div class="row align-items-center">
-        <div >
-          <p class="lead">
-            <div class="fa fa-lock-open"></div>Data Security
-          </p>
-          <p class="lead mb-4">
-            The information hub allows users to customize their data security as required.
-          </p>
+<header class="bg-light">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Data Security</h1>
+    </div>
+    <div class="row align-items-center">
+      <div>
+        <p class="lead mb-4">
+          The information hub provides a number of features which allow users to effectively secure their data as
+          needed. This includes authentication/authorization, data isolation, and encryption.
+        </p>
 
-          <div class="alert alert-warning">
-              Disclaimer: Always consult a data security expert when dealing with sensitive data and be sure that company/organization data manage policies are being followed.  The data experts group recognize the need to keep data secure, and the platform was built with data security as a primary design constrained.
-              However, the responsibility for managing data is on the data owners (users), and data experts is not accountable for the loss/theft of data used on it's platform.
-          </div>
-          <div class="row mx-n2 text-center">
-            <a class="btn btn-lg btn-outline-success" href="" role="button">Getting started &raquo;</a>
-          </div>
+        <div class="alert alert-warning">
+          Important: Consult a data security expert when dealing with sensitive data and be sure that
+          company/organization data management policies are being followed.
+          The responsibility for protecting data is on the data owners (users).
+        </div>
+        <div class="row mx-n2 text-center">
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="mb-3">Isolating Data</h1>
-      </div>
-      <div class="card-columns">
-          <div class="card">
-              <div class="card-header">to be completed</div>
-              <ul class="list-group list-group-flush">
-                  <li class="list-group-item">to be completed</li>
-              </ul>
-            </div>
-      </div>
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Data Isolation</h1>
     </div>
-  </section>
+    <p class="lead mb-4">
+      Data isolation achieved by using firewalls and networks (and in some scenarios "air gaps") to create barriers
+      between the data storage platform and unwanted users.
+      The Integration Hub does not require data to be moved from these isolated areas.
 
-  <section id="features">
-        <div class="container">
-            <div class="row">
-            <h1 class="mb-3">Password Storage</h1>
-            </div>
-            <div class="card-columns">
-                <div class="card">
-                    <div class="card-header">to be completed</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">to be completed</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </section>
+      <ul class="list-group">
+        <li class="list-group-item">Local Network Isolation - When the database is stored on the local network (but not
+          available on the
+          internet), a remote agent is installed on the local network which will perform the data processing remotely.
+        </li>
+        <li class="list-group-item">Strict Isolation - When the database is on a highly secured network, which does not
+          have outbound access to
+          the central server, a development platform should be created outside this area to allow building and testing
+          of data jobs. The tested jobs can be exported and run in isolation on the secured network.</li>
+        <li class="list-group-item">
+          When data is restricted to a local network, however there is a requirement to publish this outside the
+          network, a
+          proxy server is available will enable this.
+        </li>
+      </ul>
+    </p>
+  </div>
+</section>
 
-        
-  <section id="features">
-    <div class="container">
-        <div class="row">
-        <h1 class="mb-3">Data Encryption</h1>
-        </div>
-        <div class="card-columns">
-            <div class="card">
-                <div class="card-header">to be completed</div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">to be completed</li>
-                </ul>
-            </div>
-        </div>
+<section id="features" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Encryption</h1>
     </div>
-    </section>
-    
+    <p class="lead mb-4">
+      Data In Transit
+      <ul class="list-group">
+        <li class="list-group-item">End User -
+          All data between the user, and the web server or the remote agent and encrypted via SSL security certificates.
+          The Information Hub uses "Let's Encrypt" to automatically generate SSL certificates.
+          If the connection has been explicitly set to not use encryption a warning will be displayed next to the remote
+          agent.</li>
+        <li class="list-group-item">Remote Agent -
+          The remote agent - database communication may or may not be encrypted depending on the features of the
+          database being connected to.
+          Best practices are to configure databases to encrypt data, or to ensure the remote agent/database connections
+          are on a secured network.</li>
+      </ul>
+    </p>
+    <p class="lead mb-4">
+      Data Storage
+      <ul class="list-group">
+        <li class="list-group-item">Encrypting Data -
+          Data encrypted by the information hub uses a composite encryption system where one part of the key is stored
+          on
+          centrally and attached to each hub, and the other part of the key is stored with the remote agent.
+          This ensures that if either the central web store or the remote agent are compromised the encrypted data will
+          still
+          be safe.
+        </li>
+        <li class="list-group-item">
+          Column Encryption - Individual columns can be encrypted by specifying the security flag on the column
+          metadata. This
+          provides the following options:
+          <ul>
+            Fast Encrypt - Performs a 5 iteration, salted encryption.
+          </ul>
+          <ul>
+            Slow Encrypt - Performs a 1000 interaction, salted encryption.
+          </ul>
+          <ul>
+            Hash - Securely hashes/salts the field.
+          </ul>
+        </li>
+        <li class="list-group-item">
+          Password Encryption - Passwords which are used to authenticate database connections are stored centrally with
+          a 1000 iteration, salted encryption. When exporting or migrating hubs, only the encrypted values are
+          available.
+        </li>
+        <li class="list-group-item">
+          Variable Encryption - Variables which have the "Encrypt" option specified are stored centrally with a 1000
+          iteration, salted encryption. When exporting or migrating hubs, only the encrypted values are available.
+        </li>
+    </p>
+  </div>
+</section>

@@ -9,14 +9,17 @@ layout: default
       </div>
       <div class="row align-items-center">
         <div class="col-6 mx-auto col-md-6 order-md-2">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/ARMe9jMTwYs" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+              <iframe width="853" height="480" src="https://www.youtube.com/embed/ARMe9jMTwYs" frameborder="0" allowfullscreen></iframe>
+            </div>
+
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
           <p class="lead">
             Introduction
           </p>
           <p class="lead mb-4">
-            Introduction to some of the key features and capabilities of the Information Hub.
+            What is the Information Hub? An introduction to some of the key features and benefits.
           </p>
           <div class="row mx-n2 text-center">
             <a class="btn btn-lg btn-outline-success" href="getting_started" role="button">Get Started &raquo;</a>
@@ -26,20 +29,19 @@ layout: default
     </div>
   </header>
 
-  {% assign videos = site.videos  %}
+  {% assign videos = site.videos | | where:"categories","video"  %}
 
   {% for post in videos %}
   <div class="container">
-      <div class="row">
-          <h1 class="mb-3">{{ post.title }}</h1>
-      </div>
       <div class="row align-items-center">
         <div class="col-6 mx-auto col-md-6 order-md-2">
-            <iframe width="640" height="360" src="{{ post.video_url }}" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+                <iframe width="853" height="480" src="{{ post.video_url }}" frameborder="0" allowfullscreen></iframe>
+              </div>
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
           <p class="lead">
-            Introduction
+              {{ post.title }}
           </p>
           <p class="lead mb-4">
             {{ post.excerpt }}
