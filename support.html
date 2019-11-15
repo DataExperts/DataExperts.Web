@@ -2,94 +2,100 @@
 layout: default
 ---
 
-  <header class="bg-light">
-    <div class="container">
-      <div class="row">
-          <h1 class="mb-3">Information Hub Support</h1>
+<header class="bg-light">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Information Hub Support</h1>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+        <img src="{{ 'assets/img/dexih-view-2.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
       </div>
-      <div class="row align-items-center">
-        <div class="col-6 mx-auto col-md-6 order-md-2">
-          <img src="{{ '/assets/img/dexih-view-2.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
-        </div>
-        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-          <p class="lead">
-            
-          </p>
-          <p class="lead mb-4">
-            The Information Hub provides both community, and commercial support options.  
-            Community support refers to forums and networks where data experts staff and other members of the community will answer questions and provide ad-hoc support.
-            Commercial support are refers to paid options that enable customs prioritized access to data experts staff and developer fixes.
-          </p>
-          <div class="row mx-n2 text-center">
-            <a class="btn btn-lg btn-outline-success" href="mailto::support@dataexpertsgroup.com" role="button">Contact Support &raquo;</a>
-          </div>
+      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+        <p class="lead">
+
+        </p>
+        <p class="lead mb-4">
+          The Information Hub provides both community, and commercial support options.
+          Community support refers to forums and networks where data experts staff and other members of the community
+          will answer questions and provide ad-hoc support.
+          Commercial support are refers to paid options that enable customs prioritized access to data experts staff and
+          developer fixes.
+        </p>
+        <div class="row mx-n2 text-center">
+          <a class="btn btn-lg btn-outline-success" href="mailto::{{site.email}}?subject=General Support Enquiry"
+            role="button">Contact Support &raquo;</a>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="mb-3">Community Support</h1>
-      </div>
-      <div class="card-columns">
-          <div class="card">
-              <div class="card-header">More Information Soon</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <a href="https://twitter.com/dataexperts"><i class="fab fa-twitter"></i></i>Tweet Us</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.youtube.com/channel/UCUQQ_sVuFti-xYvKtfLJNkg"><i class="fab fa-youtube"></i>Our youtube channel</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.linkedin.com/company/data-experts-group"><i class="fab fa-linkedin"></i>Linked In</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://github.com/DataExperts/Dexih.App.UI"><i class="fab fa-github"></i>Git Hub</a>
-                </li>
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Support Options</h1>
+    </div>
+    <div class="card-columns">
+      <div class="card">
+        <div class="card-header">Community Support</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="{{site.community}}"><i class="far fa-smile mr-2"></i></i>Community Forums</a>
+          </li>
+          <li class="list-group-item">
+            <a href="{{site.twitter}}"><i class="fab fa-twitter mr-2"></i></i>Tweet Us</a>
+          </li>
+          <li class="list-group-item">
+            <a href="{{site.youTube}}"><i class="fab fa-youtube mr-2"></i>Our youtube channel</a>
+          </li>
+          <li class="list-group-item">
+            <a href="{{site.linkedIn}}"><i class="fab fa-linkedin mr-2"></i>Linked In</a>
+          </li>
+          <li class="list-group-item">
+            <a href="{{site.github}}"><i class="fab fa-github mr-2"></i>Git Hub</a>
+          </li>
 
-            </ul>
+        </ul>
         </ul>
 
       </div>
-    </div>
-  </section>
-
-  <section id="features">
-      <div class="container">
-        <div class="row">
-          <h1 class="mb-3">Commercial Support</h1>
+      <div class="card">
+        <div class="card-header">Premium Support</div>
+        <div class="card-body">We will be offering standard premium support packages in the near future.
+          If you are looking to deliver your data integration to a production environment, contact us to discuss a
+          customized support plan.
         </div>
-        <div class="card-columns">
-            <div class="card">
-                <div class="card-header">More Information Soon</div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"></li>
-                </ul>
-              </div>
-  
-  
+        <div class="card-footer">
+          <a class="btn btn-outline-success" href="mailto::{{site.email}}?subject=Premium Support Enquiry"
+            role="button">Contact Us &raquo;</a>
         </div>
       </div>
-    </section>
-  
-    <section id="features">
-        <div class="container">
-          <div class="row">
-            <h1 class="mb-3">Hosting Support</h1>
-          </div>
-          <div class="card-columns">
-              <div class="card">
-                  <div class="card-header">More Information Soon</div>
-                  <ul class="list-group list-group-flush">
-                      <li class="list-group-item"></li>
-                  </ul>
-                </div>
-    
-    
-          </div>
+
+      <div class="card">
+        <div class="card-header">Hosting Support</div>
+        <div class="card-body">We will be offering standard premium support packages in the near future.
+          If you are looking to deliver your data integration to a production environment, contact us to discuss a
+          customized support plan.
         </div>
-      </section>
-    
+        <div class="card-footer">
+          <a class="btn btn-outline-success" href="mailto::{{site.email}}?subject=Hosting Support Enquiry"
+            role="button">Contact Us &raquo;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Consulting Support</div>
+        <div class="card-body">We have a network consulting partners who provide data related consulting.  We are also interested in expanding our network with more partners.
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-outline-success" href="mailto::{{site.email}}?subject=Consulting Support Enquiry"
+            role="button">Contact Us &raquo;</a>
+          <a class="btn btn-outline-info" href="mailto::{{site.email}}?subject=Consulting Partner Enquiry"
+            role="button">Partner Enquiry &raquo;</a>
+
+        </div>
+
+      </div>
+    </div>
+</section>

@@ -29,7 +29,7 @@ layout: default
     </div>
   </header>
 
-  {% assign videos = site.videos | | where:"categories","video"  %}
+  {% assign videos = site.videos | where:"categories","video"  %}
 
   {% for post in videos %}
   <div class="container">

@@ -25,7 +25,7 @@ layout: default
 
   <div class="container">
   
-  {% assign videos = site.videos | | where:"categories","tutorial"  %}
+  {% assign videos = site.videos | where:"categories","tutorial"  %}
 
   {% for post in videos %}
 
