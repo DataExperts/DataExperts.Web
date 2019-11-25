@@ -6,5 +6,5 @@ video_url: https://www.youtube.com/embed/v0pwKIQNpFk
 excerpt_separator: <!--more-->
 ---
 
-Loading a standard flat file (csv) into a datalink for processing.
+This tutorial shows you how to load data into a target table using a flat file (csv in this scenario) as the data source.
 <!--more-->

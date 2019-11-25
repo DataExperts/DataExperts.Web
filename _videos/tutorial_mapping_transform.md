@@ -6,6 +6,6 @@ video_url: https://www.youtube.com/embed/Om-_8GAY3w8
 excerpt_separator: <!--more-->
 ---
 
-How to create various types of mappings with in the mapping transform.
+The mapping transform is used to map columns and apply functions.  This tutorial shows you how to create various types of mappings using the mapping transform.
 
 <!--more-->

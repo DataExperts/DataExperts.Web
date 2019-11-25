@@ -9,7 +9,8 @@ layout: default
     </div>
     <div class="row align-items-center">
         <div class="col-6 mx-auto col-md-6 order-md-2">
-          <img src="{{ '/assets/img//security.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
+          <img src="{{ '/assets/img//dexih_view_encrypt.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
+          <div class="centered"><i class="fas fa-lock"></i></div>
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
           <p class="lead">
@@ -17,11 +18,23 @@ layout: default
             needed. This includes authentication/authorization, data isolation, and encryption.
           </p>
 
-          <div class="alert alert-warning">
-            Important: Consult a data security expert when dealing with sensitive data and be sure that
-            company/organization data management policies are being followed.
-            The responsibility for protecting data is on the data owners (users).
-          </div>
+          <div class="card">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4 d-flex bg-danger p-5">
+                          <h1 class="mx-auto align-self-center text-white"><i class="fa fa-2x fa-exclamation-circle"></i></h1>
+                      </div>
+                      <div class="col-md-8 py-3">
+                          <h3 class="card-title">Read First!</h3>
+                          <p class="card-text">Consult a data security expert when dealing with sensitive data and be sure that
+                              company/organization data management policies are being followed.
+                              The responsibility for protecting data is on the data owners (users).</p>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>  
+
           <div class="row mx-n2 text-center">
           </div>
         </div>
@@ -40,18 +53,21 @@ layout: default
       The Integration Hub does not require data to be moved from these isolated areas.
 
       <ul class="list-group">
-        <li class="list-group-item">Local Network Isolation - When the database is stored on the local network (but not
+        <li class="list-group-item">
+          <h3>Local Network Isolation</h3>
+          When the database is stored on the local network (but not
           available on the
           internet), a remote agent is installed on the local network which will perform the data processing remotely.
         </li>
-        <li class="list-group-item">Strict Isolation - When the database is on a highly secured network, which does not
-          have outbound access to
-          the central server, a development platform should be created outside this area to allow building and testing
+        <li class="list-group-item">
+          <h3>Strict Isolation</h3>
+          When the database is on a highly secured network, which does not
+          have outbound access to the central server, a development platform should be created outside this area to allow building and testing
           of data jobs. The tested jobs can be exported and run in isolation on the secured network.</li>
         <li class="list-group-item">
-          When data is restricted to a local network, however there is a requirement to publish this outside the
-          network, a
-          proxy server is available will enable this.
+          <h3>Publishing Isolated Data</h3>
+          When data is restricted to a local network, however there is a requirement to publish this outside the network, the Integration Hub provides an optional
+          proxy server to allow this.
         </li>
       </ul>
     </p>

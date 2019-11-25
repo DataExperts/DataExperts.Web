@@ -6,5 +6,5 @@ video_url: https://www.youtube.com/embed/7grOmSY74Ho
 excerpt_separator: <!--more-->
 ---
 
-This tutorial shows how to connect to a stock web service and looking a stock value.
+External web services can be used to augment data.  This tutorial shows how to connect to a stock web service and lookup a stock value.
 <!--more-->
