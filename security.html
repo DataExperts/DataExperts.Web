@@ -14,7 +14,8 @@ layout: default
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
           <p class="lead">
-            The information hub provides a number of features which allow users to effectively secure their data as
+            When using the integration hub, <b>you own</b> and secure your data as required.  
+            The platform also provides features which allow users to effectively secure their data as
             needed. This includes authentication/authorization, data isolation, and encryption.
           </p>
 
@@ -26,9 +27,9 @@ layout: default
                       </div>
                       <div class="col-md-8 py-3">
                           <h3 class="card-title">Read First!</h3>
-                          <p class="card-text">Consult a data security expert when dealing with sensitive data and be sure that
-                              company/organization data management policies are being followed.
-                              The responsibility for protecting data is on the data owners (users).</p>
+                          <p class="card-text">Effectively securing data is complex.  We recommend consulting a data security expert and ensure
+                              company/organization data management policies are being followed.</p>
+                          <p class="card-text">Our goal is to ensure our tools allow users to secure there data appropriately, however it is the responsibility of user to ensure their data is secured appropriately.</p>
                       </div>
                   </div>
   
@@ -41,6 +42,37 @@ layout: default
     </div>
   </div>
 </header>
+
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <h1 class="mb-3">Our Data Policy</h1>
+    </div>
+    <p class="lead mb-4">
+      
+      Our policy is very simple, <b>you</b> (the user) own and manage your data.  We do not store or receive any processed data in our central servers (excluding metadata).  In addition, we do not (and will not) sell data, metadata, aggregated data or any other user data or information.  
+      Our revenue model is based on providing premium services, not by selling data.
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h3>What data do we store?</h3>
+          <ul>
+            <li>User logins and repositories (user passwords are hashed/salted)</li>
+            <li>Database connection information.  Database passwords are encrypted and can only be decrypted by the remote agents encryption key.</li>
+            <li>Other data integration information such as jobs, schedules, and transforms</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <h3>What we do not store?</h3>
+          <ul>
+            <li>Encryption keys.  These are stored with the locally installed remote agent.</li>
+            <li>Processed data.  Data processing occurs between the remote agent and the data sources only.</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+  </div>
+</section>
 
 <section id="features">
   <div class="container">
@@ -80,7 +112,7 @@ layout: default
       <h1 class="mb-3">Encryption</h1>
     </div>
     <p class="lead mb-4">
-      Data In Transit
+      <h3>Data Transmission</h3>
       <ul class="list-group">
         <li class="list-group-item">End User -
           All data between the user, and the web server or the remote agent and encrypted via SSL security certificates.
@@ -95,15 +127,13 @@ layout: default
       </ul>
     </p>
     <p class="lead mb-4">
-      Data Storage
+      <h3>Data Storage</h3>
       <ul class="list-group">
         <li class="list-group-item">Encrypting Data -
           Data encrypted by the information hub uses a composite encryption system where one part of the key is stored
-          on
           centrally and attached to each hub, and the other part of the key is stored with the remote agent.
           This ensures that if either the central web store or the remote agent are compromised the encrypted data will
-          still
-          be safe.
+          still be safe.
         </li>
         <li class="list-group-item">
           Column Encryption - Individual columns can be encrypted by specifying the security flag on the column
@@ -113,7 +143,7 @@ layout: default
             Fast Encrypt - Performs a 5 iteration, salted encryption.
           </ul>
           <ul>
-            Slow Encrypt - Performs a 1000 interaction, salted encryption.
+            Slow Encrypt - Performs a 1000 iteration, salted encryption.
           </ul>
           <ul>
             Hash - Securely hashes/salts the field.
@@ -121,12 +151,12 @@ layout: default
         </li>
         <li class="list-group-item">
           Password Encryption - Passwords which are used to authenticate database connections are stored centrally with
-          a 1000 iteration, salted encryption. When exporting or migrating hubs, only the encrypted values are
-          available.
+          a slow/salted encryption. When exporting or migrating hubs, only the encrypted values are
+          exported.
         </li>
         <li class="list-group-item">
-          Variable Encryption - Variables which have the "Encrypt" option specified are stored centrally with a 1000
-          iteration, salted encryption. When exporting or migrating hubs, only the encrypted values are available.
+          Variable Encryption - Variables which have the "Encrypt" option specified are stored centrally with a slow/salted
+          salted encryption. When exporting or migrating hubs, only the encrypted values are available.
         </li>
     </p>
   </div>

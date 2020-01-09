@@ -2,31 +2,31 @@
 layout: default
 ---
 
-<header class="bg-light">
+<header class="bg-gradient">
   <div class="container">
-    <div class="row ">
-      <h1 class="mb-3">Integration Hub</h1>
+    <div class="row text-black">
+      <h1 class="mb-3">Data Experts Group - Integration Hub</h1>
     </div>
     <div class="row align-items-center">
-      <div class="col-6 mx-auto col-md-6 order-md-2">
+      <!-- <div class="col-6 mx-auto col-md-6 order-md-2">
         <img src="{{ '/assets/img//dexih-view-1.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
-      </div>
-      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+      </div> -->
+      <div class="col-md-12 order-md-1 text-center text-md-left pr-md-5">
         <p class="lead">
           <strong><em>A simple and powerful way to manage your data.</em></strong>
         </p>
         <p class="lead mb-4">
           The Integration Hub is an online platform for extracting, processing and delivering data. 
           <ul class="lead">
-            <li>Quickly connect to data stored in databases, text files, API's.</li>
-            <li>Run analytics and other transformations on the data.</li>
-            <li>Deliver the data to other systems or visualize and explore the results.</li>
+            <li>Quickly connect to data stored in databases, text files and API's.</li>
+            <li>Transform data and perform complex analytical operations.</li>
+            <li>Deliver data to other systems or visualize and explore the results.</li>
           </ul>
         </p>
         <div class="row mx-n2 text-center">
-          <a class="btn btn-lg btn-outline-success m-2" role="button" href="{{ '/getting_started' | relative_url }}">Getting
+          <a class="btn btn-lg btn-outline-primary m-2" role="button" href="{{ '/getting_started' | relative_url }}">Getting
             started &raquo;</a>
-          <a class="btn btn-lg btn-outline-primary m-2" role="button" href="{{ '/videos' | relative_url }}">See it in
+          <a class="btn btn-lg btn-outline-info m-2" role="button" href="{{ '/videos' | relative_url }}">See it in
             action &raquo;</a>
         </div>
       </div>
@@ -37,7 +37,7 @@ layout: default
 <section id="features">
   <div class="container">
     <div class="row">
-      <h1 class="mb-3">Why Information Hub?</h1>
+      <h1 class="mb-3">Why use the Information Hub?</h1>
     </div>
     <div class="card-deck">
         <div class="card">
@@ -76,7 +76,7 @@ layout: default
                     </div>
                     <div class="col-md-8 py-3">
                         <h3 class="card-title">Analytics</h3>
-                        <p class="card-text">Over 400 built in functions covering machine learning, financial, statistics and geometry.  Supports custom functions and plugins for more specific needs.</p>
+                        <p class="card-text">Over 400 built in functions covering machine learning, financial, statistics and geometry.  Custom functions and plugins for more specific needs.</p>
                     </div>
                 </div>
             </div>
@@ -149,8 +149,8 @@ layout: default
           <li class="list-group-item">Microsoft Sql Server</li>
           <li class="list-group-item">MySql</li>
           <li class="list-group-item">Oracle </li>
-          <li class="list-group-item">DB2</li>
           <li class="list-group-item">IBM DB2</li>
+          <li class="list-group-item">Sqlite</li>
         </ul>
       </div>
       <div class="card">
@@ -163,7 +163,6 @@ layout: default
       <div class="card">
         <div class="card-header">File Types</div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Sqlite</li>
           <li class="list-group-item">Microsoft Excel</li>
           <li class="list-group-item">Delimited Files (such as CSV)</li>
           <li class="list-group-item">Json Files</li>
@@ -187,7 +186,7 @@ layout: default
           <li class="list-group-item">Transactional Load (for data integrity) </li>
           <li class="list-group-item">Target based change detection</li>
           <li class="list-group-item">Source based change detection</li>
-          <li class="list-group-item">Update target tables or preserve change history (Type 2 Slowly changing)</li>
+          <li class="list-group-item">Preserve changes (i.e. type 2 slowly changing)</li>
         </ul>
       </div>
       <div class="card">
@@ -214,10 +213,10 @@ layout: default
       <div class="card">
         <div class="card-header">Data Validation</div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Leverage any built in function</li>
-          <li class="list-group-item">Custom reusable data validations</li>
+          <li class="list-group-item">Validate with any built in function</li>
+          <li class="list-group-item">Create custom/reusable data validations</li>
           <li class="list-group-item">Validate via white lists or black lists</li>
-          <li class="list-group-item">Validate against lookups (e.g. value exists in other table)</li>
+          <li class="list-group-item">Validate against lookups (i.e. value exists in other table)</li>
           <li class="list-group-item">Invalid data can be rejected or stop processing</li>
         </ul>
       </div>
@@ -234,9 +233,9 @@ layout: default
       <div class="card">
         <div class="card-header">Scheduling</div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Order data processing into dependency chains</li>
           <li class="list-group-item">Trigger based on schedule (once off or recurring)</li>
           <li class="list-group-item">Trigger based on file event</li>
+          <li class="list-group-item">Sequence processing based on completion of other jobs</li>
         </ul>
       </div>
       <div class="card">
@@ -244,7 +243,6 @@ layout: default
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Custom data views</li>
           <li class="list-group-item">Chart data (bar, pie, line, scatter etc.)</li>
-          <li class="list-group-item">Trigger based on file event</li>
           <li class="list-group-item">User configurable dashboards which group views and charts into layout</li>
         </ul>
       </div>

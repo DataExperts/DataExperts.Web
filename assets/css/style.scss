@@ -2,3 +2,9 @@
 ---
 
 @import "main";
+
+.bg-gradient {
+    background: rgb(201,209,200);
+    background: linear-gradient(119deg, rgba(201,209,200,1) 0%, rgba(155,199,203,0.8365546902354692) 21%, rgba(28,111,26,0.648879620207458) 100%); 
+}
+
