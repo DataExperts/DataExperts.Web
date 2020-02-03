@@ -3,6 +3,10 @@
 
 @import "main";
 
+body {
+    padding-bottom: 70px;
+}
+
 .bg-gradient {
     background: rgb(0,123,255);
     background: linear-gradient(130deg, rgba(0,123,255,1) 0%, rgba(220,53,69,1) 51%, rgba(40,167,69,1) 100%);
