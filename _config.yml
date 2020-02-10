@@ -7,7 +7,7 @@ youTube: https://www.youtube.com/channel/UCUQQ_sVuFti-xYvKtfLJNkg
 gitHub: https://github.com/DataExperts/Dexih.App.UI
 community: https://dexih.mn.co/feed
 description: > # this means to ignore newlines until "show_excerpts:"
-  Data Experts Group, custodians of the Information Hub.
+  Data Experts Group, custodians of the Integration Hub.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
