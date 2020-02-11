@@ -11,6 +11,27 @@ body {
     background: rgb(0,123,255);
     background: linear-gradient(130deg, rgba(0,123,255,1) 0%, rgba(220,53,69,1) 51%, rgba(40,167,69,1) 100%);
     color: white !important;
+    background-size: 300% 300%;
+
+    -webkit-animation: GradientAnimate 15s ease infinite;
+    -moz-animation: GradientAnimate 15s ease infinite;
+    animation: GradientAnimate 15s ease infinite;
+    
+    @-webkit-keyframes GradientAnimate {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes GradientAnimate {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes GradientAnimate {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 }
 
 .vignette {

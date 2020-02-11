@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="bg-light">
+<header class="bg-gradient">
   <div class="container">
     <div class="row">
       <h1 class="mb-3">Data Security</h1>
@@ -25,9 +25,9 @@ layout: default
                       <div class="col-md-4 d-flex bg-danger p-5">
                           <h1 class="mx-auto align-self-center text-white"><i class="fa fa-2x fa-exclamation-circle"></i></h1>
                       </div>
-                      <div class="col-md-8 py-3">
+                      <div class="col-md-8 py-3 text-danger">
                           <h3 class="card-title">Read First!</h3>
-                          <p class="card-text">Effectively securing data is complex.  We recommend consulting a data security expert and ensure
+                          <p class="card-text ">Effectively securing data is complex.  We recommend consulting a data security expert and ensure
                               company/organization data management policies are being followed.</p>
                           <p class="card-text">Our goal is to ensure our tools allow users to secure there data appropriately, however it is the responsibility of user to ensure their data is secured appropriately.</p>
                       </div>
@@ -114,12 +114,14 @@ layout: default
     <p class="lead mb-4">
       <h3>Data Transmission</h3>
       <ul class="list-group">
-        <li class="list-group-item">End User -
+        <li class="list-group-item">
+          <h3>End User</h3>
           All data between the user, and the web server or the remote agent and encrypted via SSL security certificates.
           The Integration Hub uses "Let's Encrypt" to automatically generate SSL certificates.
           If the connection has been explicitly set to not use encryption a warning will be displayed next to the remote
           agent.</li>
-        <li class="list-group-item">Remote Agent -
+        <li class="list-group-item">
+          <h3>Remote Agent</h3>
           The remote agent - database communication may or may not be encrypted depending on the features of the
           database being connected to.
           Best practices are to configure databases to encrypt data, or to ensure the remote agent/database connections
@@ -129,15 +131,16 @@ layout: default
     <p class="lead mb-4">
       <h3>Data Storage</h3>
       <ul class="list-group">
-        <li class="list-group-item">Encrypting Data -
+        <li class="list-group-item">
+          <h3>Encrypting Data</h3>
           Data encrypted by the integration hub uses a composite encryption system where one part of the key is stored
           centrally and attached to each hub, and the other part of the key is stored with the remote agent.
           This ensures that if either the central web store or the remote agent are compromised the encrypted data will
           still be safe.
         </li>
         <li class="list-group-item">
-          Column Encryption - Individual columns can be encrypted by specifying the security flag on the column
-          metadata. This
+          <h3>Column Encryption</h3>
+          Individual columns can be encrypted by specifying the security flag on the column metadata. This
           provides the following options:
           <ul>
             Fast Encrypt - Performs a 5 iteration, salted encryption.
@@ -150,12 +153,14 @@ layout: default
           </ul>
         </li>
         <li class="list-group-item">
-          Password Encryption - Passwords which are used to authenticate database connections are stored centrally with
+          <h3>Password Encryption</h3>
+           Passwords which are used to authenticate database connections are stored centrally with
           a slow/salted encryption. When exporting or migrating hubs, only the encrypted values are
           exported.
         </li>
         <li class="list-group-item">
-          Variable Encryption - Variables which have the "Encrypt" option specified are stored centrally with a slow/salted
+          <h3>Variable Encryption</h3>
+          Variables which have the "Encrypt" option specified are stored centrally with a slow/salted
           salted encryption. When exporting or migrating hubs, only the encrypted values are available.
         </li>
     </p>

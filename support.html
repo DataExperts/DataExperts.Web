@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="bg-light">
+<header class="bg-gradient">
   <div class="container">
     <div class="row">
       <h1 class="mb-3">Integration Hub Support</h1>
@@ -18,13 +18,11 @@ layout: default
         </p>
         <p class="lead mb-4">
           The Integration Hub provides both community, and commercial support options.
-          Community support refers to forums and networks where data experts staff and other members of the community
-          will answer questions and provide ad-hoc support.
-          Commercial support are refers to paid options that enable customs prioritized access to data experts staff and
-          developer fixes.
+          Community support includes forums and social media which aim to leverage both the Data Experts staff and the community.
+          Commercial support offers paid support and hosting options to customers who require a premium level service and response times.
         </p>
         <div class="row mx-n2 text-center">
-          <a class="btn btn-lg btn-outline-success" href="mailto:{{site.email}}?subject=General Support Enquiry"
+          <a class="btn btn-lg btn-success" href="mailto:{{site.email}}?subject=General Support Enquiry"
             role="button">Contact Support &raquo;</a>
         </div>
       </div>
@@ -37,28 +35,95 @@ layout: default
     <div class="row">
       <h1 class="mb-3">Support Options</h1>
     </div>
-    <div class="card-columns">
+    <div class="card-deck">
       <div class="card">
-        <div class="card-header">Community Support</div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <a href="{{site.community}}"><i class="far fa-smile mr-2"></i>Community Forums</a>
-          </li>
-          <li class="list-group-item">
-            <a href="{{site.twitter}}"><i class="fab fa-twitter mr-2"></i>Tweet Us</a>
-          </li>
-          <li class="list-group-item">
-            <a href="{{site.youTube}}"><i class="fab fa-youtube mr-2"></i>Our youtube channel</a>
-          </li>
-          <li class="list-group-item">
-            <a href="{{site.linkedIn}}"><i class="fab fa-linkedin mr-2"></i>Linked In</a>
-          </li>
-          <li class="list-group-item">
-            <a href="{{site.gitHub}}"><i class="fab fa-github mr-2"></i>Git Hub</a>
-          </li>
-
-        </ul>
+        <div class="card-header">
+          <div class="d-flex flex-row p-0">
+            <div>
+              <i class="fab fa-github"></i>
+              Features / Issues
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">We are an open source platform.  Raise feature requests and bugs on our github pages.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/DataExperts/Dexih.App.UI/issues" target="_blank" class="btn btn-button btn-info">
+            <i class="fa fa-folder-open"></i>
+            Open
+          </a>
+        </div>
       </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex flex-row p-0">
+            <div>
+              <i class="far fa-smile"></i>
+              Forums
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Use the community forums for questions and other integration hub discussion.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://dexih.mn.co/feed" target="_blank" class="btn btn-button btn-info">
+            <i class="fa fa-folder-open"></i>
+            Open
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex flex-row p-0">
+            <div>
+              <i class="fab fa-twitter"></i>
+              Twitter
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Send messages to our twitter for quick short queries and comments.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://twitter.com/dataexperts" target="_blank" class="btn btn-button btn-info">
+            <i class="fa fa-folder-open"></i>
+            Open
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex flex-row p-0">
+            <div>
+              <i class="fab fa-youtube"></i>
+              YouTube
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Go to our YouTube channel for video tutorials.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.youtube.com/channel/UCUQQ_sVuFti-xYvKtfLJNkg" target="_blank" class="btn btn-button btn-info">
+            <i class="fa fa-folder-open"></i>
+            Open
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <h1 class="mb-3">Premium Options</h1>
+    </div>
+    <div class="card-deck">
       <div class="card">
         <div class="card-header">Premium Support</div>
         <div class="card-body">We will be offering standard premium support packages in the near future.
@@ -66,7 +131,7 @@ layout: default
           customized support plan.
         </div>
         <div class="card-footer">
-          <a class="btn btn-outline-success" href="mailto:{{site.email}}?subject=Premium Support Enquiry"
+          <a class="btn btn-success" href="mailto:{{site.email}}?subject=Premium Support Enquiry"
             role="button">Contact Us &raquo;</a>
         </div>
       </div>
@@ -78,7 +143,7 @@ layout: default
           customized support plan.
         </div>
         <div class="card-footer">
-          <a class="btn btn-outline-success" href="mailto:{{site.email}}?subject=Hosting Support Enquiry"
+          <a class="btn btn-success" href="mailto:{{site.email}}?subject=Hosting Support Enquiry"
             role="button">Contact Us &raquo;</a>
         </div>
       </div>
@@ -88,9 +153,9 @@ layout: default
         <div class="card-body">We have a network consulting partners who provide data related consulting.  We are also interested in expanding our network with more partners.
         </div>
         <div class="card-footer">
-          <a class="btn btn-outline-success" href="mailto:{{site.email}}?subject=Consulting Support Enquiry"
+          <a class="btn btn-success" href="mailto:{{site.email}}?subject=Consulting Support Enquiry"
             role="button">Contact Us &raquo;</a>
-          <a class="btn btn-outline-info" href="mailto:{{site.email}}?subject=Consulting Partner Enquiry"
+          <a class="btn btn-info" href="mailto:{{site.email}}?subject=Consulting Partner Enquiry"
             role="button">Partner Enquiry &raquo;</a>
 
         </div>
