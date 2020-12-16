@@ -5,17 +5,20 @@ layout: default
   <header class="bg-gradient">
     <div class="container">
       <div class="row">
-          <h1 class="mb-3">Tutorials</h1>
+          <h1 class="mb-3">Tutorials - Covid19 Data Hub</h1>
       </div>
       <div class="row align-items-center">
         <div class="col-6 mx-auto col-md-6 order-md-2">
-          <img src="{{ '/assets/img/tutorial.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
+          <img src="{{ '/assets/img/covid19.png' | relative_url }}" class="rounded img-fluid mb-3 mb-md-0 pt-3">
         </div>
         <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
           <p class="lead mb-4">
-            Before starting the tutorials, ensure that you are ready to go with the getting started guide.
+            This series of tutorials demonstrates how to build an always up-to-date data hub using John Hopkins University COVID19 data.
           </p>
-          <div class="row mx-n2 text-center">
+          <p class="lead mb-4">
+            Before getting started, ensure that you are ready to go with the getting started guide.
+          </p>
+            <div class="row mx-n2 text-center">
             <a class="btn btn-lg btn-outline-success" href="getting_started" role="button">Getting started &raquo;</a>
           </div>
         </div>
@@ -25,9 +28,9 @@ layout: default
 
   <div class="container">
   
-  {% assign videos = site.videos | where:"categories","tutorial"  %}
+  {% assign tutorials = site.posts | where:"categories","covid19"  %}
 
-  {% for post in videos %}
+  {% for post in tutorials %}
 
       <div class="row align-items-center m-2">
         <div class="col-6 mx-auto col-md-6 order-md-2">
@@ -40,10 +43,11 @@ layout: default
                 {{ post.title }}
             </p>
           <p class="lead mb-4">
-            {{ post.excerpt }}
+            {{ post.description }}
           </p>
           <div class="row mx-n2 d-none d-lg-block">
-            <a class="btn btn-lg btn-outline-success" href="{{ post.video_url }} " target="_blank" role="button">Show Video &raquo;</a>
+            <a class="btn btn-outline-success" href="{{ post.video_url }} " target="_blank" role="button">Video &raquo;</a>
+            <a class="btn btn-outline-success" href="{{ post.url }} " role="button">Tutorial &raquo;</a>
           </div>
         </div>
       </div>

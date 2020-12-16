@@ -2,7 +2,7 @@
 sequence: 1
 title: "Create a staging datalink"
 categories: tutorial
-video_url: https://www.youtube.com/embed/9hp-2vYAkXY
+video_url: https://www.youtube.com/embed/r_LnievHJFE
 excerpt_separator: <!--more-->
 ---
 

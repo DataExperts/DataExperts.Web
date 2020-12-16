@@ -7,8 +7,10 @@ body {
     font-family: 'Cabin', sans-serif;
   }
 
-header {
-    padding: 156px 0 100px;
+
+  /* position the content below the fixed toolbar */
+  main {
+    padding-top: 59px;
   }
   
   section {

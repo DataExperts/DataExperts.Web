@@ -14,6 +14,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 collections:
     - videos
     - topics
+    - tutorials
 
 plugins:
  - jekyll-feed
